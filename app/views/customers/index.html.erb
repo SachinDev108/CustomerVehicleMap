@@ -13,8 +13,8 @@
           </thead>
           <tbody>
             <% @customers.each do |customer| %>
-              <tr class="<%=  'show-detail' if customer.vehicles.present? %>">
-                <td><span class="glyphicon glyphicon-eye-open"></span></td>
+              <tr>
+                <td><span class="glyphicon glyphicon-eye-open <%=  'show-detail' if customer.vehicles.present? %>"></span></td>
                 <td><%= customer.name %></td>
                 <td><%= customer.address %></td>
                 <td><%= customer.email %></td>

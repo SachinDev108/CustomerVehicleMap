@@ -1,5 +1,5 @@
 $(document).on("click", ".show-detail", function(e) {
-	$(this).next('tr').toggle();
+  $(this).parent().parent().next('tr').toggle()
 });
 
 var componentForm = {
