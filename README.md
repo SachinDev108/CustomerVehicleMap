@@ -7,10 +7,12 @@ CustomerVehicleMap is developed to simply create a Google Map.
 
 ### Setup
 
+```
 bundle install
 bundle exec rake db:create
 bundle exec rake db:migrate
 bundle exec rake db:seed
+```
 
 
 ### Javascript Dependencies:
