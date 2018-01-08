@@ -1,0 +1,49 @@
+<script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+
+
+<%= form_tag root_path,  :class => 'form-horizontal',:method => "get" do %>
+    
+    <div class="form-group">
+        <div class="col-sm-2">
+            <%= text_field_tag :city, '', class: 'form-control', placeholder: 'City', value: params[:city]%>
+        </div>
+        <div class="col-sm-2">
+            <%= text_field_tag :state, '', class: 'form-control', placeholder: 'State', value: params[:state]%>
+        </div>
+        <div class="col-sm-2">
+            <%= text_field_tag :zip, '', class: 'form-control', placeholder: 'Zip', value: params[:zip]%>
+        </div>
+        <div class="col-sm-2 col-sm-offset-1">
+            <%= submit_tag 'Search', class: "btn btn-primary" %>
+        </div>
+        <%= link_to 'Customer List', customers_path %>
+    </div>
+<% end %>
+<div style='width: 800px;'>
+  <div id="map" style='width: 1200px; height: 600px;'></div>
+</div>
+
+<script type="text/javascript">
+  handler = Gmaps.build('Google');
+  handler.buildMap({
+    provider: {
+      disableDefaultUI: true
+      // pass in other Google Maps API options here
+    },
+    internal: {
+      id: 'map'
+    }
+  },
+  function(){
+    markers = <%= raw @hash.to_json %>
+    Gmaps.store = {}
+    Gmaps.store.markers = markers.map(function(m) {
+      marker = handler.addMarker(m);
+      marker.serviceObject.set('id', m.id); // You can add other attributes using set
+      return marker;
+    });
+    handler.bounds.extendWith(Gmaps.store.markers);
+    handler.fitMapToBounds();
+  }
+  );
+</script>

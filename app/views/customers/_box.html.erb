@@ -1,0 +1,33 @@
+<div>
+  <h6 class="modal-title"><%= object.name %></h6>
+</div>
+<div>
+  <small><b>Address:</b> <%= object.address%></small></br>
+  
+</div>
+<% if object.vehicles.present? %>
+  <div class="table-responsive">
+    <table id="mytable" class="table table-bordred table-striped">        
+      <thead>
+        <th>Year</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Trim</th>
+        <th>Style</th>
+        <th>Vin</th>
+      </thead>
+      <tbody>
+        <% object.vehicles.each do |vehicle| %>
+          <tr>
+            <td><%= vehicle.year %></td>
+            <td><%= vehicle.make %></td>
+            <td><%= vehicle.model %></td>
+            <td><%= vehicle.trim %></td>
+            <td><%= vehicle.style %></td>
+            <td><%= vehicle.vin %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end%>

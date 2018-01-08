@@ -1,0 +1,24 @@
+address,city,state,zip,gmail,phone,lat,lng,name
+"421 8th Avenue, New York, NY, United States",New York,NY,10001,test1@yopmail.com,1236547891,40.7515458,-73.9959106,customer1
+"421 East 8th Street, Brooklyn, New York, NY, United States",New York,NY,11218,test2@yopmail.com,1236247891,40.6397506,-73.9706627,customer2
+"421 South 8th Street, Brooklyn, New York, NY, United States",New York,NY,11211,test3@yopmail.com,1236246891,40.7090886,-73.9601955,customer3
+"421 East 7th Street, Brooklyn, New York, NY, United States",New York,NY,11218,test4@yopmail.com,1236247851,40.6416565,-73.9721112,customer4
+"421 West 7th Street, Brooklyn, New York, NY, United States",New York,NY,11215,test5@yopmail.com,1336247891,40.6690939,-73.9821604,customer5
+"421 East 11th Street, Brooklyn, New York, NY, United States",New York,NY,10009,test6@yopmail.com,1236047891,40.7288716,-73.98264,customer6
+"421 11th Street, Brooklyn, New York, NY, United States",New York,NY,11215,test7@yopmail.com,1236245891,40.666784,-73.984322,customer7
+"421 North 10th Street, Brooklyn, New York, NY, United States",New York,NY,11211,test8@yopmail.com,1236247811,40.7175825,-73.9524523,customer8
+"421 North 5th Street, Brooklyn, New York, NY, United States",New York,NY,11211,test9@yopmail.com,1236249891,40.7143018,-73.9545516,customer9
+"421 North 5th Street, Springfield Gardens, New York, NY, United States",New York,NY,11413,test10@yopmail.com,1236247091,40.6874766,-73.7427305,customer10
+"421 5th Avenue, New York, NY, United States",New York,NY,11413,test11@yopmail.com,1236247091,40.7509552,-73.9827082,customer11
+"421 3rd Avenue, New York, NJ, United States",New York,NY,10016,test12@yopmail.com,1236337891,40.7427536,-73.9799388,customer12
+"421 3rd Avenue, Brooklyn, Nowy Jork, New York, United States",New York,NY,11215,test13@yopmail.com,1236247191,40.6725263,-73.9898106,customer13
+"421 9th Avenue, Brooklyn, New York, Nowy Jork, United States",New York,NY,10001,test14@yopmail.com,1236247891,40.7531802,-73.996829,customer14
+"421 4th Street, Brooklyn, New York, Nowy Jork, United States",New York,NY,11215,test15@yopmail.com,1236247877,40.670633,-73.980045,customer15
+"422 South 4th Street, Brooklyn, New York, NY, United States",New York,NY,11211,test16@yopmail.com,12362667891,40.7073813,-73.9510121,customer16
+"201 4th Street, Brooklyn, New York, NY, United States",New York,NY,11215,test17@yopmail.com,1776247891,40.7109439,-73.9600605,customer17
+"201 4th Avenue, Brooklyn, New York, NY, United States",New York,NY,11217,test18@yopmail.com,1996247891,40.6777803,-73.982376,customer18
+"101 North 4th Street, Brooklyn, New York, NY, United States",New York,NY,11249,test19@yopmail.com,12368847891,40.7172734,-73.9608378,customer19
+"104 North 11th Street, Brooklyn, New York, NY, United States",New York,NY,11249,test20@yopmail.com,1236227891,40.7211554,-73.9576124,customer20
+"909 North 11th Street, Brooklyn, New York, NY, United States",New York,NY,11249,test21@yopmail.com,1288247891,40.7212806,-73.9573545,customer21
+"1001 1st Avenue, New York, NY, United States",New York,NY,10022,test22@yopmail.com,1236117891,40.7570097,-73.9641832,customer22
+"1001 12th Avenue, Whitestone, New York, NY, United States",New York,NY,11357,test23@yopmail.com,1236247888,40.791519,-73.8073357,customer23

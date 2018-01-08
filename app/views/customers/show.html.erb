@@ -1,0 +1,17 @@
+<div class="col-sm-12">
+<p id="notice"></p>
+<table class="table table-bordered table-dark">
+  <tr><th>Name:</th>
+    <th>Address:</th>
+    <th>Email:</th>
+    <th>Phone:</th>
+  </tr>
+  <tr>
+    <td><%= @customer.name %></td>
+    <td><%= @customer.address %></td>
+    <td><%= @customer.email%></td>
+    <td><%= @customer.phone%></td>
+  </tr>
+  <%= link_to 'Back', customers_path %>
+</table>
+</div>

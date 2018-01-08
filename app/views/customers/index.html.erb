@@ -1,0 +1,67 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table id="mytable" class="table table-bordred table-striped">        
+          <thead>
+            <th></th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <% @customers.each do |customer| %>
+              <tr class="<%=  'show-detail' if customer.vehicles.present? %>">
+                <td><span class="glyphicon glyphicon-eye-open"></span></td>
+                <td><%= customer.name %></td>
+                <td><%= customer.address %></td>
+                <td><%= customer.email %></td>
+                <td><%= customer.phone %></td>
+                <td><%= link_to '', edit_customer_path(customer), class: "glyphicon glyphicon-pencil"  %> | <%= link_to '', customer_path(customer), method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-trash" %></td>
+              </tr>
+              <%if customer.vehicles.present?%>
+                <tr style="display: none;">
+                  <td colspan=8 bgcolor=" #ede6c2" >
+                    <table class="table table-bordred" >
+                    <h4>Vehicle List</h4>
+                    <thead>
+                      <th></th>
+                      <th>Year:</th>
+                      <th>Make:</th>
+                      <th>Model:</th>
+                      <th>Trim:</th>
+                      <th>Style:</th>
+                      <th>Vin:</th>
+          
+                    </thead>
+
+                      <% customer.vehicles.each do |vehicle| %>
+                        <tr>
+                          <td></td>
+                          <td><%= vehicle.year %></td>
+                          <td><%= vehicle.make %></td>
+                          <td><%= vehicle.model %></td>
+                          <td><%= vehicle.trim %></td>
+                          <td><%= vehicle.style %></td>
+                          <td><%= vehicle.vin %></td>
+                        </tr>
+                      <% end %>
+                    </table>
+                  </td>
+                </tr>
+              <%end %>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <span><%= link_to "Add New Cstomer", new_customer_path, :id => "open-contacts-dialog-btn",
+        :class => "btn btn-primary", :method => :get %></span>
+        <span><%= link_to "Map", root_path, :class => "btn btn-primary", target: :_blank %></span>
+        
+      </div>
+    </div>
+  </div>
+</div>
